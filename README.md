@@ -67,6 +67,10 @@ error(env.zig): Missing required environment variable: GOOGLE_CLIENT_SECRET ([]c
 error(env.zig): Missing required environment variable: APP_PORT (u16)
 ```
 
+## Examples
+
+See the [examples](./examples) directory for a full web server example using GitHub OAuth2 authentication.
+
 ## Supported types
 
 | Zig type | Behavior |

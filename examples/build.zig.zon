@@ -1,0 +1,18 @@
+.{
+    .name = .env_examples,
+    .version = "0.0.0",
+    .minimum_zig_version = "0.15.2",
+    .paths = .{""},
+    .fingerprint = 0x81c8691d9809a80e,
+    .dependencies = .{
+        .env = .{ .path = "../" },
+        .httpz = .{
+            .url = "git+https://github.com/karlseguin/http.zig#ddaf1989f9c5fe1b139fa846ad273efd4368083a",
+            .hash = "httpz-0.0.0-PNVzrN40BwD3lGAE8l_pShvVIGSlWglmFOsdhJnMVcXR",
+        },
+        .oauth2 = .{
+            .url = "git+https://github.com/aw1875/oauth2.zig#8a25dfb433ca0f97cf65942b87a2409257b5d426",
+            .hash = "oauth2-1.0.0-icZTH5dzAAAaBgD_cA5iV9Zi7LMFKtjIVKqvwS-oem-m",
+        },
+    },
+}
