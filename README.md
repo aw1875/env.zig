@@ -43,7 +43,7 @@ Call `init` once at startup, typically in `main`:
 const env = @import("env.zig").env;
 
 pub fn main() !void {
-    const gpa = std.heap.DebugAllocator(.{}){};
+    var gpa = std.heap.DebugAllocator(.{}){};
     defer if (gpa.deinit() != .ok) @panic("Failed to deinitialize allocator");
     const allocator = gpa.allocator();
 
